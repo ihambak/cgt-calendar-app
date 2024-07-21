@@ -49,6 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <Container>
             <Sidebar open={isOpen}>
+                cgt
                 <ToggleButton onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? '<<' : '>>'}
                 </ToggleButton>
