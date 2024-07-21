@@ -24,7 +24,7 @@ const Content = styled.div`
 
 const ToggleButton = styled.button`
     background-color: transparent;
-    border: none;
+    border: 1px solid white;
     color: white;
     cursor: pointer;
     margin: 10px;
@@ -50,7 +50,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Container>
             <Sidebar open={isOpen}>
                 <ToggleButton onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? 'Close' : 'Open'}
+                    {isOpen ? '<<' : '>>'}
                 </ToggleButton>
                 <MenuItem to="/" open={isOpen}>Home</MenuItem>
                 <MenuItem to="/calendar" open={isOpen}>Calendar</MenuItem>
